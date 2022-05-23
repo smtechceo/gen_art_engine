@@ -24,44 +24,42 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 20,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-
-      // { name: "Fur",
-      //   options: {
-      //     rarities: [90, [10,12,6,7,21,18]],
-      //   },
-      // },
-      // { name: "Hair", 
-      //   options: {
-      //     subGroup: true,  // existance of sub folder corresponding to each kind of fur
-      //     linkLayer: 7,    // layer 7 of Fur
-      //     rarities: [
-      //       [90, []],
-      //     ],
-      //     noResetRarities: false,
-      //   },  
-      // },
-      // { name: "Mouth",
-      //   options: {
-      //     rarities: [80, []],
-      //   }
-      // },
-      // { name: "Hats",  
-      //   options: {
-      //     noneToReveal: ['Hat_type1.png', 'Hat_type2.png'],  // list of hats
-      //                                      // revealed only when Hair is None
-      //     linkLayer: 8, // layer 8 of Hair
-      //     rarities: [100, [], []],
-      //   },
-      // },  
+      { name: "background"},
+      { name: "body" },
+      { name: "hair" },
+      { name: "ears" },
+      { name: "eyes" },
+      { name: "nose", 
+        options: {
+          subGroup: true, // existance of sub folder corresponding to each kind of fur
+          linkLayer: 1, // layer 1 of body
+          rarities: [
+            [100, []],
+          ],
+          // noResetRarities: true,
+        },
+      },
+      { name: "mouth" },      
+      { name: "clothes",
+        options: {
+          rarities: [70, []],
+        }
+      },
+      { name: "tie",  
+        options: {
+          noneToReveal: ['tie3.png', 'tie4'], // list of ties
+                          // revealed only when cloth is None
+          linkLayer: 7, // layer 7 of cloth
+          rarities: [100, [], []]
+        }
+      },
+      { name: "necklace",
+        options: {
+          rarities: [80, []]
+        }
+      },
     ],
   },
 ];
