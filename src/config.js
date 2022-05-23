@@ -73,8 +73,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 600,
-  height: 400,
+  width: 2020,
+  height: 2020,
   smoothing: false,
 };
 
