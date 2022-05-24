@@ -57,7 +57,7 @@ const layerConfigurations = [
       },
       { name: "necklace",
         options: {
-          rarities: [80, []]
+          rarities: [60, []]
         }
       },
     ],
