@@ -304,6 +304,14 @@ Create a preview image collage of your collection, run:
 npm run preview
 ```
 
+### Set specified rarities to image files 
+
+Set rarities specified in src/config.js to image files , run:
+
+```sh
+npm run set_rarities
+```
+
 ### Generate pixelated images from collection
 
 In order to convert images into pixelated images you would need a list of images that you want to convert. So run the generator first.
